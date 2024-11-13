@@ -1,12 +1,14 @@
 :root {
     --white:#fff;
     --green:#3A5A40;
+    --dark-green: #588157;
     --yellow:#e9c46a;
     --red:#E63946;
     --bcg:#F1FAEE;
     --light-blue:#A8DADC;
     --blue:#457B9D;
     --dark-blue:#1D3557;
+    --footer:#000814;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -21,6 +23,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    scroll-behavior: smooth;
 }
 
 header,nav, section, footer {
@@ -36,7 +39,8 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: var(--bcg); 
+    background-color: var(--bcg);
+
 }
 
 h1, h2, h3 {
@@ -57,6 +61,7 @@ p {
     background-color: transparent;
     position: sticky;
     top: 12px;
+    z-index: 10;
 }
 
 .nav_container {
@@ -210,10 +215,59 @@ p {
 }
 
 /* PROJECTOS */
-
+.projects h2 {
+    margin-top: 7rem;
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
 
 /* SOBRE MÍ */
-.about img {
-    height: 440px;
-    width: 330px;
+.about-title svg {
+    height:30px;
+    width: 30px;
+}
+.about-title h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+.about-title {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.about-container {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.about-text {
+    font-style: italic;
+    font-size: 17px;
+}
+
+.about-img {
+    width: 230px;
+    position: relative;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: var(--footer);
+    color: var(--bcg);
+    padding: 3rem;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 70px;
 }
