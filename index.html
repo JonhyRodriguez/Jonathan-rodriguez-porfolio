@@ -81,10 +81,59 @@
         </div>
     </section>
     
+    <section class="contact" id="contact-section">
+        <div class="contact__container grid">
+            <div class="contact__data">
+                <h2 class="section__title">
+                    <p>Contacta Conmigo</p>
+                </h2>
+
+                <p class="contact__description-1">
+                    Reviso todos los correos electrónicos. Envíeme los mensajes que desee y le responderé con la mayor brevedad posible.
+                </p>
+                <p class="contact__description-2">
+                    Necesito su <b>Nombre</b> y su <b>Email</b>, pero no recibirá nada más que su respuesta.
+                </p>
+            </div>
+
+            <div class="contact__mail">
+                <h2 class="contact__title">Mandame un mensaje!</h2>
+
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__group">
+                        <div class="contact__box">
+                            <input type="text" name="user_name" class="contact__input" id="name" required placeholder="">
+                            <label for="name" class="contact__label">Nombre</label>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="user_email" class="contact__input" id="email" required placeholder="">
+                            <label for="email" class="contact__label">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="">
+                        <label for="subject" class="contact__label">Asunto</label>
+                    </div>
+
+                    <div class="contact__box contact__area">
+                        <textarea name="contact__message" id="message" class="contact__input" required placeholder=""></textarea>
+                        <label for="message" class="contact__label">Mensaje</label>
+                    </div>
+
+                    <button class="contact__button button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.7267 2.95694L16.2734 22.0432C16.1225 22.5716 15.7979 22.5956 15.5563 22.1126L11 13L1.9229 9.36919C1.41322 9.16532 1.41953 8.86022 1.95695 8.68108L21.0432 2.31901C21.5716 2.14285 21.8747 2.43866 21.7267 2.95694ZM19.0353 5.09647L6.81221 9.17085L12.4488 11.4255L15.4895 17.5068L19.0353 5.09647Z"></path></svg>
+                        Enviar                      
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-section">
         <div class="footer-container">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Todos los derechos reservados.</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script>. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
