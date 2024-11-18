@@ -76,11 +76,12 @@ p {
     padding-inline-start: 20px;
     padding-inline-end: 20px;
 }
-.nav_item{
 
+.nav_item{
     font-size: 1.1rem;
     font-weight: 500;
 }
+
 .nav_link{
     text-decoration: none;
     color: var(--blue);
