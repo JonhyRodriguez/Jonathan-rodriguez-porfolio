@@ -1,0 +1,444 @@
+:root {
+    --white:#fff;
+    --green:#3A5A40;
+    --light-green: #dad7cd;
+    --dark-green: #344E41;
+    --yellow:#e9c46a;
+    --satin-gold:#C2A250;
+    --red:#E63946;
+    --bcg:#F1FAEE;
+    --light-blue:#A8DADC;
+    --blue:#457B9D;
+    --dark-blue:#1D3557;
+    --footer:#000814;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    scroll-behavior: smooth;
+}
+
+header,nav, section, footer {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: var(--bcg);
+
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; 
+}
+  
+p {
+    margin-top: 0;
+    margin-bottom: 1rem; 
+}
+
+/* NAVEGACIÓN */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: sticky;
+    top: 32px;
+    z-index: 10;
+}
+
+.nav_container {
+    background-color: #E2EFED;
+    border-radius: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+.nav_item{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--blue);
+    padding: .25rem 1rem;
+}
+
+.nav_link:hover{
+    color: var(--satin-gold);
+}
+
+/* HOME */
+.hero-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 19rem auto;
+    align-items: center;
+    color: var(--dark-blue);
+}
+
+.hero-wrap h1 {
+    font-size: 2.7rem;
+}
+
+.hero-wrap h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+.btns {
+    display: flex;               
+    justify-content: center;      
+    align-items: center;                       
+    flex-wrap: wrap;                            
+    text-align: center;  
+    gap: 1.5rem;        
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 4rem;                 
+    padding: .75rem 1rem;           
+    color: var(--dark-blue);      
+    outline: none;                    
+    display: inline-flex;        
+    align-items: center;          
+    justify-content: center;      
+}
+
+.btn:hover {
+    cursor: pointer;             
+    background-color: var(--light-blue);
+    border-radius: 30px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.btn svg {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+}
+
+/* ESTUDIOS */
+.education {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 0 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+}
+
+.study-heading {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.work-heading {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid darkgrey;
+    padding-left: 20px;
+    position: relative;
+    margin-top: 10px; 
+}
+
+.item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    left: -26.6px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: #f4c542;
+    border-radius: 50%;
+}
+
+.location {
+    color: #f4c542;
+    font-size: 1.25em;
+    margin: 0 0 5px;
+}
+
+.position {
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.date {
+    color: var(--blue);
+}
+
+/* PROJECTOS */
+.projects h2 {
+    margin-top: 7rem;
+    text-align: center;
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+/* SOBRE MÍ */
+.about-title svg {
+    height:30px;
+    width: 30px;
+}
+.about-title h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+}
+
+.about-title {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.about-container {
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    gap: 4rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.about-text {
+    font-style: italic;
+    font-size: 17px;
+}
+
+.about-img {
+    width: 230px;
+    position: relative;
+    border-radius: 20px;
+}
+
+/* CONTACTO */
+.contact {
+    padding-bottom: 0;
+}
+
+.contact__container {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    margin-top: 10rem;
+}
+
+.contact__data {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: var(--light-green);
+    padding: 1.75rem;
+    margin-left: auto;
+    border-bottom: 4px solid var(--red);
+    z-index: 2;
+    left: 20px;
+    top: 30px;
+}
+
+.contact__data .section__title {
+    margin: 0 0 1.5rem;
+    transform: translate(-3.25rem);
+}
+
+.contact__description-1 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.contact__description-2 {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.contact__mail {
+    position: relative;
+    background-color: var(--dark-blue);
+    padding: 1rem 2.5rem 2.5rem;
+    width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 7px 11px rgba(0, 0, 0, 0.1);
+}
+
+.contact__title {
+    color: var(--white);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact__form,
+.contact__group {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.contact__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.contact__form {
+    position: relative;
+}
+
+.contact__box {
+    position: relative;
+    width: auto;
+    height: 58px;
+}
+
+.contact__input,
+.contatc__button {
+    font-family: var(--font-family-sans-serif);
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+
+.contact__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+.contact__input::placeholder {
+    color: var(--light-green);
+}
+
+.contact__input:focus {
+    border: 2px solid var(--white);
+}
+
+.contact__label {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    color: var(--white);
+    font-size: small;
+    font-weight: 700;
+    background-color: var(--dark-blue);
+    padding: 8px;
+    pointer-events: none;
+    transition: top .3s, opacity .3s, background-color .3s;
+}
+
+.contact__form .contact__area {
+    height: 10rem;
+}
+
+.contact__area textarea {
+    resize: none;
+    padding-top: 1rem;
+}
+
+.contact__button {
+    display: flex;
+    gap: .25rem;
+    background-color: var(--light-green);
+    cursor: pointer;
+    width: 150px;
+    padding: .75rem 1.25rem;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    font-size: 15px;
+}
+
+.contact__button:hover {
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--satin-gold);
+}
+
+.contact__button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label {
+    opacity: 1;
+    top: -16px;
+}
+
+.contact__message {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    bottom: -2.8rem;
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: var(--footer);
+    color: var(--bcg);
+    padding: 3rem;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 70px;
+}
