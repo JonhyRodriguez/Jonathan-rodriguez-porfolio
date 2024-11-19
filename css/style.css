@@ -147,9 +147,42 @@ p {
     padding-right: 5px;
 }
 
+/*  GO-HOME ARROW */
+.arrow__home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 50%;
+    color: var(--dark-blue);
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .arrow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+
 /* ESTUDIOS */
 .education {
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 8px;
     padding: 40px;
     margin: 0 100px;
