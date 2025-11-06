@@ -89,7 +89,8 @@ p {
 }
 
 section {
-  scroll-margin-top: 150px; /* Ajusta según la altura de tu navbar */
+    scroll-margin-top: 150px;
+    /* Ajusta según la altura de tu navbar */
 }
 
 
@@ -144,8 +145,10 @@ section {
     display: flex;
     align-items: center;
     gap: 8px;
-    min-width: 35px; /* Fuerza un ancho mínimo similar */
-    height: 40px;      /* Igualamos la altura visual */
+    min-width: 35px;
+    /* Fuerza un ancho mínimo similar */
+    height: 40px;
+    /* Igualamos la altura visual */
 }
 
 
@@ -395,14 +398,14 @@ section {
 }
 
 .work-heading {
-  color: var(--dark-blue);
-  font-size: 2rem;
-  padding: 2rem;
-  margin-left: 2px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
