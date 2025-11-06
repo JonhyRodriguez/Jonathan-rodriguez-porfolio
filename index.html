@@ -7,28 +7,54 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <title>Porfolio de Jonathan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <title data-i18n="pageTitle">Porfolio de Jonathan</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav_container">
             <ul>
-                <li class="nav_item"><a href="#experience-section" class="nav_link">Trayectoria</a></li>
-                <!--<li class="nav_item"><a href="#projects-section" class="nav_link">Projectos</a></li>-->
-                <li class="nav_item"><a href="#about-section" class="nav_link">Sobre mí</a></li>
-                <li class="nav_item"><a href="#contact-section" class="nav_link">Contacto</a></li>
+                <li class="nav_item"><a href="#experience-section" class="nav_link"
+                        data-i18n="navExperience">Trayectoria</a></li>
+                <!--<li class="nav_item"><a href="#projects-section" class="nav_link" data-i18n="navProjects">Projectos</a></li>-->
+                <li class="nav_item"><a href="#about-section" class="nav_link" data-i18n="navAbout">Sobre mí</a></li>
+                <li class="nav_item"><a href="#contact-section" class="nav_link" data-i18n="navContact">Contacto</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <button class="theme-toggle" id="theme-toggle">🌗 Cambiar tema</button>
+
+    <button class="theme-toggle" id="theme-toggle">🌗</button>
+
+    <div class="lang-switcher">
+        <button id="lang-toggle" class="lang-btn">
+            <span class="flag flag-es active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 36 36">
+                    <path fill="#C60A1D" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4z" />
+                    <path fill="#FFC400" d="M0 12h36v12H0z" />
+                    <path fill="#EA596E" d="M9 17v3a3 3 0 1 0 6 0v-3z" />
+                    <path fill="#F4A2B2" d="M12 16h3v3h-3z" />
+                    <path fill="#DD2E44" d="M9 16h3v3H9z" />
+                    <ellipse cx="12" cy="14.5" fill="#EA596E" rx="3" ry="1.5" />
+                    <ellipse cx="12" cy="13.75" fill="#FFAC33" rx="3" ry=".75" />
+                    <path fill="#99AAB5" d="M7 16h1v7H7zm9 0h1v7h-1z" />
+                    <path fill="#66757F" d="M6 22h3v1H6zm9 0h3v1h-3zm-8-7h1v1H7zm9 0h1v1h-1z" />
+                </svg>
+            </span>
+            <span class="flag flag-en">
+                <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 36 36">
+                    <path fill="#EEE" d="M32 5H4a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4" />
+                    <path fill="#CE1124" d="M21 5h-6v10H0v6h15v10h6V21h15v-6H21z" />
+                </svg>
+            </span>
+        </button>
+    </div>
+
     <section class="hero-wrap">
         <div class="text">
-            <h1>Hey! soy Jonathan Rodríguez</h1>
-            <h3>Desarrollador Junior Full Stack</h3>
+            <h1 data-i18n="heroTitle">Hey! soy Jonathan Rodríguez</h1>
+            <h3 data-i18n="heroSubtitle">Desarrollador Junior Full Stack</h3>
         </div>
         <div class="btns">
             <a class="btn" href="https://www.linkedin.com/in/jonathan-ivan-rodriguez-cruz/">
@@ -41,11 +67,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="245.76" viewBox="0 0 25 24">
                     <path fill="currentColor"
                         d="M12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031a12.35 12.35 0 0 1 4.449 4.422l.031.058a12.2 12.2 0 0 1 1.654 6.166c0 5.406-3.483 10-8.327 11.658l-.087.026a.72.72 0 0 1-.642-.113l.002.001a.62.62 0 0 1-.208-.466v-.014v.001l.008-1.226q.008-1.178.008-2.154a2.84 2.84 0 0 0-.833-2.274a11 11 0 0 0 1.718-.305l-.076.017a6.5 6.5 0 0 0 1.537-.642l-.031.017a4.5 4.5 0 0 0 1.292-1.058l.006-.007a4.9 4.9 0 0 0 .84-1.645l.009-.035a7.9 7.9 0 0 0 .329-2.281l-.001-.136v.007l.001-.072a4.73 4.73 0 0 0-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479a4.25 4.25 0 0 0-.404-1.814l.011.026a2.1 2.1 0 0 0-1.31.181l.012-.005a8.6 8.6 0 0 0-1.512.726l.038-.022l-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433a9 9 0 0 0-1.272-.595l-.066-.022A2.17 2.17 0 0 0 5.837 5.1l.013-.002a4.2 4.2 0 0 0-.393 1.788c0 .531.097 1.04.275 1.509l-.01-.029a4.72 4.72 0 0 0-1.265 3.303v-.004l-.001.13c0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013a4.4 4.4 0 0 0 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012a3 3 0 0 1-.699.236l-.021.004c-.256.051-.549.08-.85.08h-.066h.003a1.9 1.9 0 0 1-1.055-.348l.006.004a2.84 2.84 0 0 1-.881-.986l-.007-.015a2.6 2.6 0 0 0-.768-.827l-.009-.006a2.3 2.3 0 0 0-.776-.38l-.016-.004l-.32-.048a1.05 1.05 0 0 0-.471.074l.007-.003q-.128.072-.08.184q.058.128.145.225l-.001-.001q.092.108.205.19l.003.002l.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024l.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007q.069.002.15.002q.392 0 .767-.062l-.027.004l.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001a.72.72 0 0 1-.645.111l.005.001C3.486 22.286.006 17.692.006 12.285c0-2.268.612-4.393 1.681-6.219l-.032.058a12.35 12.35 0 0 1 4.422-4.449l.058-.031a11.9 11.9 0 0 1 6.073-1.645h.098h-.005zm-7.64 17.666q.048-.112-.112-.192q-.16-.048-.208.032q-.048.112.112.192q.144.096.208-.032m.497.545q.112-.08-.032-.256q-.16-.144-.256-.048q-.112.08.032.256q.159.157.256.047zm.48.72q.144-.112 0-.304q-.128-.208-.272-.096q-.144.08 0 .288t.272.112m.672.673q.128-.128-.064-.304q-.192-.192-.32-.048q-.144.128.064.304q.192.192.32.044zm.913.4q.048-.176-.208-.256q-.24-.064-.304.112t.208.24q.24.097.304-.096m1.009.08q0-.208-.272-.176q-.256 0-.256.176q0 .208.272.176q.256.001.256-.175zm.929-.16q-.032-.176-.288-.144q-.256.048-.224.24t.288.128t.225-.224z" />
-                </svg> 
+                </svg>
             </a>
             <a class="btn" href="/public/cv/CV_Jonathan_Rodríguez.docx.pdf" download>
                 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512">
-                    <path fill="currentColor" d="M249.18 328.324c-9.788 15.384-19.179 30.434-40.222 45.055c-11.256 7.89-37.164 23.306-73.99 23.306C64.709 396.685 8 345.605 8 255.801c0-78.486 53.345-140.486 128.466-140.486c30.434 0 57.474 10.521 77.387 26.304c18.414 14.65 27.038 29.304 34.563 42.456l-52.58 26.273c-3.762-8.626-8.29-17.649-19.913-27.406c-12.784-10.155-25.54-13.152-36.46-13.152c-42.821 0-65.364 39.825-65.364 84.145c0 58.238 29.7 87.143 65.364 87.143c34.563 0 48.48-24.042 57.474-39.426zm184.194-204.75H504l-92.037 265.22h-67.597l-90.904-265.22h70.625l54.843 188.6z"/>
+                    <path fill="currentColor"
+                        d="M249.18 328.324c-9.788 15.384-19.179 30.434-40.222 45.055c-11.256 7.89-37.164 23.306-73.99 23.306C64.709 396.685 8 345.605 8 255.801c0-78.486 53.345-140.486 128.466-140.486c30.434 0 57.474 10.521 77.387 26.304c18.414 14.65 27.038 29.304 34.563 42.456l-52.58 26.273c-3.762-8.626-8.29-17.649-19.913-27.406c-12.784-10.155-25.54-13.152-36.46-13.152c-42.821 0-65.364 39.825-65.364 84.145c0 58.238 29.7 87.143 65.364 87.143c34.563 0 48.48-24.042 57.474-39.426zm184.194-204.75H504l-92.037 265.22h-67.597l-90.904-265.22h70.625l54.843 188.6z" />
                 </svg>
             </a>
         </div>
@@ -63,16 +90,25 @@
 
     <section class="experience" id="experience-section">
         <div class="row">
-            <h2 class="work-heading">Experiencia<br>Laboral</h2>
+            <h2 class="work-heading">
+                <span data-i18n="experienceWord">Experiencia</span>
+                <span data-i18n="laboralWord">Laboral</span>
+            </h2>
+
             <div class="container">
                 <div class="item">
                     <h3 class="location">Desic S.L</h3>
-                    <p class="position">Desarrollador en prácticas <span class="date">(Mayo 2024 - Junio 2024)</span>
+                    <p class="position">
+                        <span data-i18n="job1">Desarrollador en prácticas</span>
+                        <span class="date" data-i18n="dateJob1">(Mayo 2024 - Junio 2024)</span>
                     </p>
                 </div>
                 <div class="item">
                     <h3 class="location">BitBox S.L</h3>
-                    <p class="position">Desarrollador full stack <span class="date">(Enero 2025 - Actualidad)</span></p>
+                    <p class="position">
+                        <span data-i18n="job2">Desarrollador full stack</span>
+                        <span class="date" data-i18n="dateJob2">(Enero 2025 - Actualidad)</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -80,20 +116,26 @@
 
     <section class="education" id="education-section">
         <div class="row">
-            <h2 class="study-heading">Estudios</h2>
+            <h2 class="study-heading" data-i18n="educationHeading">Estudios</h2>
             <div class="container">
                 <div class="item">
                     <h3 class="location">IES Valsequillo</h3>
-                    <p class="position">Bachillerato <span class="date"> (2019 - 2021)</span></p>
+                    <p class="position">
+                        <span data-i18n="edu1">Bachillerato</span>
+                        <span class="date" data-i18n="dateEdu1">(2019 - 2021)</span>
+                    </p>
                 </div>
                 <div class="item">
                     <h3 class="location">IES Ana Luisa Benitez</h3>
-                    <p class="position">Desarrollo de Apliaciones Multiplataforma <span class="date"> (2022 -
-                            2024)</span></p>
+                    <p class="position">
+                        <span data-i18n="edu2">Desarrollo de Aplicaciones Multiplataforma</span>
+                        <span class="date" data-i18n="dateEdu2">(2022 - 2024)</span>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!--
     <section class="projects" id="projects-section">
@@ -107,19 +149,25 @@
                     d="M14 14.252V16.3414C13.3744 16.1203 12.7013 16 12 16C8.68629 16 6 18.6863 6 22H4C4 17.5817 7.58172 14 12 14C12.6906 14 13.3608 14.0875 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.7929 19.9142L21.3284 16.3787L22.7426 17.7929L17.7929 22.7426L14.2574 19.2071L15.6716 17.7929L17.7929 19.9142Z">
                 </path>
             </svg>
-            <h2>Sobre mí</h2>
+            <h2 data-i18n="aboutHeading">Sobre mí</h2>
         </div>
         <div class="about-container">
             <div class="about-text">
-                <p>Graduado en Desarrollo de Aplicaciones Multiplataforma. A lo largo de mi formación, he adquirido
+                <p data-i18n="aboutText1">
+                    Graduado en Desarrollo de Aplicaciones Multiplataforma. A lo largo de mi formación, he adquirido
                     sólidos conocimientos en la creación y adaptación de aplicaciones para diversas plataformas, como
-                    web, escritorio y móvil.</p>
-                <p>He tenido la oportunidad de trabajar en equipo en diversos proyectos, colaborando de manera eficaz
+                    web, escritorio y móvil.
+                </p>
+                <p data-i18n="aboutText2">
+                    He tenido la oportunidad de trabajar en equipo en diversos proyectos, colaborando de manera eficaz
                     con mis compañeros para alcanzar los objetivos comunes. Además, me caracterizo por ser una persona
                     trabajadora y responsable, siempre comprometido con entregar resultados de calidad en los plazos
-                    establecidos.</p>
-                <p>Actualmente, me encuentro inmerso en proyectos personales, con el objetivo constante de mejorar mis
-                    habilidades y aportar valor a cada tarea que realizo.</p>
+                    establecidos.
+                </p>
+                <p data-i18n="aboutText3">
+                    Actualmente, me encuentro inmerso en proyectos personales, con el objetivo constante de mejorar mis
+                    habilidades y aportar valor a cada tarea que realizo.
+                </p>
             </div>
             <img class="about-img" src="img/about.jpg" alt="image">
         </div>
@@ -129,49 +177,50 @@
         <div class="contact__container grid">
             <div class="contact__data">
                 <h2 class="section__title">
-                    <p>Contacta Conmigo</p>
+                    <p data-i18n="contactHeading">
+                        Contacta Conmigo
+                    </p>
                 </h2>
 
-                <p class="contact__description-1">
+                <p class="contact__description-2" data-i18n="contactDesc1">
                     Reviso todos los correos electrónicos. Envíeme los mensajes que desee y le responderé con la mayor
                     brevedad posible.
                 </p>
-                <p class="contact__description-2">
+                <p class="contact__description-1" data-i18n="contactDesc2">
                     Necesito su <b>Nombre</b> y su <b>Email</b>, pero no recibirá nada más que mi respuesta.
                 </p>
             </div>
 
             <div class="contact__mail">
-                <h2 class="contact__title">Mandame un mensaje!</h2>
-
+                <h2 class="contact__title" data-i18n="contactFormTitle">Mandame un mensaje!</h2>
                 <form action="" class="contact__form" id="contact-form">
                     <div class="contact__group">
                         <div class="contact__box">
                             <input type="text" name="user_name" class="contact__input" id="name" required
                                 placeholder="">
-                            <label for="name" class="contact__label">Nombre</label>
+                            <label for="name" class="contact__label" data-i18n="labelName">Nombre</label>
                         </div>
 
                         <div class="contact__box">
                             <input type="text" name="user_email" class="contact__input" id="email" required
                                 placeholder="">
-                            <label for="email" class="contact__label">Email</label>
+                            <label for="email" class="contact__label" data-i18n="labelEmail">Email</label>
                         </div>
                     </div>
 
                     <div class="contact__box">
                         <input type="text" name="user_subject" class="contact__input" id="subject" required
                             placeholder="">
-                        <label for="subject" class="contact__label">Asunto</label>
+                        <label for="subject" class="contact__label" data-i18n="labelSubject">Asunto</label>
                     </div>
 
                     <div class="contact__box contact__area">
                         <textarea name="user_message" id="message" class="contact__input" required
                             placeholder=""></textarea>
-                        <label for="message" class="contact__label">Mensaje</label>
+                        <label for="message" class="contact__label" data-i18n="labelMessage">Mensaje</label>
                     </div>
 
-                    <button class="contact__button button">
+                    <button class="contact__button button" data-i18n="sendButton">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M21.7267 2.95694L16.2734 22.0432C16.1225 22.5716 15.7979 22.5956 15.5563 22.1126L11 13L1.9229 9.36919C1.41322 9.16532 1.41953 8.86022 1.95695 8.68108L21.0432 2.31901C21.5716 2.14285 21.8747 2.43866 21.7267 2.95694ZM19.0353 5.09647L6.81221 9.17085L12.4488 11.4255L15.4895 17.5068L19.0353 5.09647Z">
@@ -188,8 +237,10 @@
 
     <footer class="footer-section">
         <div class="footer-container">
-            <p>&copy;
-                <script>document.write(new Date().getFullYear());</script> | Todos los derechos reservados.
+            <p>
+                &copy;
+                <script>document.write(new Date().getFullYear());</script> | <span data-i18n="rights">Todos los derechos
+                    reservados.</span>
             </p>
         </div>
     </footer>
@@ -201,6 +252,8 @@
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
     <script src="js/theme-toggle.js"></script>
+    <script src="js/lang-data.js"></script>
+    <script src="js/lang-switcher.js"></script>
 </body>
 
 </html>
