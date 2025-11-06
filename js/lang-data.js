@@ -32,7 +32,11 @@ const translations = {
         labelSubject: "Asunto",
         labelMessage: "Mensaje",
         sendButton: "Enviar",
-        rights: "Todos los derechos reservados."
+        rights: "Todos los derechos reservados.",
+        emailjsError: 'Error: EmailJS no está cargado ❌',
+        emailSent: 'Mensaje enviado! ✔️',
+        emailFail: 'El mensaje no se envió (error del servidor) ❌',
+        formNotFound: 'Formulario de contacto no encontrado'
     },
     en: {
         pageTitle: "Jonathan's Portfolio",
@@ -67,6 +71,14 @@ const translations = {
         labelSubject: "Subject",
         labelMessage: "Message",
         sendButton: "Send",
-        rights: "All rights reserved."
+        rights: "All rights reserved.",
+        emailjsError: 'Error: EmailJS is not loaded ❌',
+        emailSent: 'Message sent! ✔️',
+        emailFail: 'The message was not sent (server error) ❌',
+        formNotFound: 'Contact form not found'
     }
 };
+
+function t(key) {
+    return translations[currentLang]?.[key] || key;
+}
